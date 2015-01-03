@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>Práctica PRO2. Energía e Industria: Fichero Fuente industria.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Práctica PRO2. Energía e Industria
+   &#160;<span id="projectnumber">v2.0 08-12-2014</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">industria.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="industria_8hpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef industria_HPP</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define industria_HPP</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span><span class="comment">//#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pais_8hpp.html">pais.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//#include &quot;utils.PRO2&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * Clase industria</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classindustria.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classindustria.html">industria</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="comment">// Descripción: contiene la información comuna de los sectores y sus prioridades.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="comment">/* Una industria se representa mediante una estructura de datos para los sectores donde </span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">   * se encuentra la información comuna de cada sector de todos los paises. Esta estructura</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">   contiene la lista de dependencias, el tantoporciento de energía que utiliza del país, la máxima </span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">   produccion por ciclo y su EUP o energía por unidad de producción*/</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structindustria_1_1infosec.html">   33</a></span>&#160;  <span class="keyword">struct </span><a class="code" href="structindustria_1_1infosec.html">infosec</a>{</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structindustria_1_1infosec.html#a456612e7e2d34c5f77ff5838848eac48">   34</a></span>&#160;    vector&lt;pair&lt;int,int&gt; &gt; <a class="code" href="structindustria_1_1infosec.html#a456612e7e2d34c5f77ff5838848eac48">DEPS</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structindustria_1_1infosec.html#a02b2a06b541b5424ccafc9f7b9786abb">   35</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structindustria_1_1infosec.html#a02b2a06b541b5424ccafc9f7b9786abb">tantxcent</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structindustria_1_1infosec.html#a011934105b62a86ee2da41fa5d446533">   36</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structindustria_1_1infosec.html#a011934105b62a86ee2da41fa5d446533">prodmax</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structindustria_1_1infosec.html#a33f6af78831242a3906317d507a23582">   37</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structindustria_1_1infosec.html#a33f6af78831242a3906317d507a23582">EUP</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  };</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classindustria.html#a7eb820db7776d5f0eb1858026836ad45">   40</a></span>&#160;  vector&lt;int&gt; <a class="code" href="classindustria.html#a7eb820db7776d5f0eb1858026836ad45">prioridades</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classindustria.html#a939d28257fb730c81336d8c88eba6024">   42</a></span>&#160;  vector&lt;infosec&gt; <a class="code" href="classindustria.html#a939d28257fb730c81336d8c88eba6024">sectores</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classindustria.html#a283d2b42b2c3d02be7dda23c9e00a0c8">todasunidades</a>(<span class="keyword">const</span> vector&lt;pair&lt;int,int&gt; &gt; &amp;deps, <span class="keywordtype">int</span> energiadis, <span class="keywordtype">int</span> EUPS, <span class="keywordtype">int</span> prodmax, <a class="code" href="classpais.html">pais</a> &amp;PAIS);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classindustria.html#a64228fa490b85478151b99209736785e">calc_min</a>(<span class="keywordtype">int</span> mindep, <span class="keywordtype">int</span> cuocient, <span class="keywordtype">int</span> prodmax);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="comment">// Constructora</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span>  <a class="code" href="classindustria.html#a8df8d1c8e07e13e4539527beca7c74ea">industria</a>(<span class="keywordtype">int</span> M);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="comment">// Destructora</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"></span>  <a class="code" href="classindustria.html#adccbac27893f7ba17b88403787539373">~industria</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">//Modificadoras</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classindustria.html#a72972484fa0f3c0ea4b986325cf8ae8e">ronda_produccion</a>(vector&lt;pais&gt; &amp;paises);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;   </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="comment">//Lectura</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classindustria.html#aa9d49340be5df93b5b5bade26ab1439a">leer_industria</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  };</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classindustria_html"><div class="ttname"><a href="classindustria.html">industria</a></div><div class="ttdoc">Representa la información comuna de todos los sectores y las prioridades entre ellos. </div><div class="ttdef"><b>Definition:</b> <a href="industria_8hpp_source.html#l00021">industria.hpp:21</a></div></div>
+<div class="ttc" id="classindustria_html_a939d28257fb730c81336d8c88eba6024"><div class="ttname"><a href="classindustria.html#a939d28257fb730c81336d8c88eba6024">industria::sectores</a></div><div class="ttdeci">vector&lt; infosec &gt; sectores</div><div class="ttdoc">Lista con la info comuna de los sectores ordenada por id de estos. </div><div class="ttdef"><b>Definition:</b> <a href="industria_8hpp_source.html#l00042">industria.hpp:42</a></div></div>
+<div class="ttc" id="classindustria_html_aa9d49340be5df93b5b5bade26ab1439a"><div class="ttname"><a href="classindustria.html#aa9d49340be5df93b5b5bade26ab1439a">industria::leer_industria</a></div><div class="ttdeci">void leer_industria()</div><div class="ttdoc">Operación de lectura. </div><div class="ttdef"><b>Definition:</b> <a href="industria_8cpp_source.html#l00085">industria.cpp:85</a></div></div>
+<div class="ttc" id="structindustria_1_1infosec_html_a33f6af78831242a3906317d507a23582"><div class="ttname"><a href="structindustria_1_1infosec.html#a33f6af78831242a3906317d507a23582">industria::infosec::EUP</a></div><div class="ttdeci">int EUP</div><div class="ttdef"><b>Definition:</b> <a href="industria_8hpp_source.html#l00037">industria.hpp:37</a></div></div>
+<div class="ttc" id="structindustria_1_1infosec_html"><div class="ttname"><a href="structindustria_1_1infosec.html">industria::infosec</a></div><div class="ttdoc">Estructura de info comuna de un sector. </div><div class="ttdef"><b>Definition:</b> <a href="industria_8hpp_source.html#l00033">industria.hpp:33</a></div></div>
+<div class="ttc" id="classindustria_html_a64228fa490b85478151b99209736785e"><div class="ttname"><a href="classindustria.html#a64228fa490b85478151b99209736785e">industria::calc_min</a></div><div class="ttdeci">static int calc_min(int mindep, int cuocient, int prodmax)</div><div class="ttdoc">Calcula el mínimo entre la producción máxima por ciclo, el número de unidades que se pueden crear con...</div><div class="ttdef"><b>Definition:</b> <a href="industria_8cpp_source.html#l00015">industria.cpp:15</a></div></div>
+<div class="ttc" id="structindustria_1_1infosec_html_a02b2a06b541b5424ccafc9f7b9786abb"><div class="ttname"><a href="structindustria_1_1infosec.html#a02b2a06b541b5424ccafc9f7b9786abb">industria::infosec::tantxcent</a></div><div class="ttdeci">int tantxcent</div><div class="ttdef"><b>Definition:</b> <a href="industria_8hpp_source.html#l00035">industria.hpp:35</a></div></div>
+<div class="ttc" id="classindustria_html_a72972484fa0f3c0ea4b986325cf8ae8e"><div class="ttname"><a href="classindustria.html#a72972484fa0f3c0ea4b986325cf8ae8e">industria::ronda_produccion</a></div><div class="ttdeci">void ronda_produccion(vector&lt; pais &gt; &amp;paises)</div><div class="ttdoc">Modificadora de industria. </div><div class="ttdef"><b>Definition:</b> <a href="industria_8cpp_source.html#l00067">industria.cpp:67</a></div></div>
+<div class="ttc" id="classpais_html"><div class="ttname"><a href="classpais.html">pais</a></div><div class="ttdoc">Representa un país, con su energia y la información de los sectores no comuna, como los stocks...</div><div class="ttdef"><b>Definition:</b> <a href="pais_8hpp_source.html#l00020">pais.hpp:20</a></div></div>
+<div class="ttc" id="classindustria_html_a283d2b42b2c3d02be7dda23c9e00a0c8"><div class="ttname"><a href="classindustria.html#a283d2b42b2c3d02be7dda23c9e00a0c8">industria::todasunidades</a></div><div class="ttdeci">static int todasunidades(const vector&lt; pair&lt; int, int &gt; &gt; &amp;deps, int energiadis, int EUPS, int prodmax, pais &amp;PAIS)</div><div class="ttdoc">Produce todas las unidades que le son posibles a un sector concreto. </div><div class="ttdef"><b>Definition:</b> <a href="industria_8cpp_source.html#l00029">industria.cpp:29</a></div></div>
+<div class="ttc" id="structindustria_1_1infosec_html_a011934105b62a86ee2da41fa5d446533"><div class="ttname"><a href="structindustria_1_1infosec.html#a011934105b62a86ee2da41fa5d446533">industria::infosec::prodmax</a></div><div class="ttdeci">int prodmax</div><div class="ttdef"><b>Definition:</b> <a href="industria_8hpp_source.html#l00036">industria.hpp:36</a></div></div>
+<div class="ttc" id="classindustria_html_adccbac27893f7ba17b88403787539373"><div class="ttname"><a href="classindustria.html#adccbac27893f7ba17b88403787539373">industria::~industria</a></div><div class="ttdeci">~industria()</div><div class="ttdoc">Destructora por defecto. </div><div class="ttdef"><b>Definition:</b> <a href="industria_8cpp_source.html#l00013">industria.cpp:13</a></div></div>
+<div class="ttc" id="structindustria_1_1infosec_html_a456612e7e2d34c5f77ff5838848eac48"><div class="ttname"><a href="structindustria_1_1infosec.html#a456612e7e2d34c5f77ff5838848eac48">industria::infosec::DEPS</a></div><div class="ttdeci">vector&lt; pair&lt; int, int &gt; &gt; DEPS</div><div class="ttdef"><b>Definition:</b> <a href="industria_8hpp_source.html#l00034">industria.hpp:34</a></div></div>
+<div class="ttc" id="classindustria_html_a7eb820db7776d5f0eb1858026836ad45"><div class="ttname"><a href="classindustria.html#a7eb820db7776d5f0eb1858026836ad45">industria::prioridades</a></div><div class="ttdeci">vector&lt; int &gt; prioridades</div><div class="ttdoc">Lista de prioridad de los sectores ordenada por prioridad. </div><div class="ttdef"><b>Definition:</b> <a href="industria_8hpp_source.html#l00040">industria.hpp:40</a></div></div>
+<div class="ttc" id="classindustria_html_a8df8d1c8e07e13e4539527beca7c74ea"><div class="ttname"><a href="classindustria.html#a8df8d1c8e07e13e4539527beca7c74ea">industria::industria</a></div><div class="ttdeci">industria(int M)</div><div class="ttdoc">Creadora por defecto. </div><div class="ttdef"><b>Definition:</b> <a href="industria_8cpp_source.html#l00007">industria.cpp:7</a></div></div>
+<div class="ttc" id="pais_8hpp_html"><div class="ttname"><a href="pais_8hpp.html">pais.hpp</a></div><div class="ttdoc">Especificación de la clase pais. </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>
