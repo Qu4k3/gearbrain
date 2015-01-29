@@ -2,3 +2,8 @@ div {
   font-family: Verdana, Garamond, serif;
   color: 	#D630AC;
 }
+
+a {
+  text-decoration: none;
+  color: 53CFA6;
+}
