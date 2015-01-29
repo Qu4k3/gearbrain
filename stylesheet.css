@@ -11,3 +11,7 @@ a {
 p {
   font-family: Garamond, serif;
 }
+
+table {
+  align: center;
+}
