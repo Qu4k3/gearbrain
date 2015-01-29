@@ -12,6 +12,10 @@ p {
   font-family: Garamond, serif;
 }
 
-tbody {
+table {
   border: 1px solid #E6005C;
+}
+
+tr {
+   border: 1px solid #E6005C;
 }
